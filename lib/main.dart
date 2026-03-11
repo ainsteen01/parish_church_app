@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:parish_app/presentation/authentication/forgot_password/forgot_password_page.dart';
 import 'package:parish_app/presentation/authentication/login/login_page.dart';
 import 'package:parish_app/presentation/authentication/logintype/login_type_page.dart';
 import 'package:parish_app/presentation/authentication/otpverification/otp_verification.dart';
@@ -17,14 +18,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: bottomNavbarPageRoute,
+      initialRoute: initialRoutes,
       routes:{
-        initialRoutes:(context) => BottomNavbar(),
+        initialRoutes:(context) => SplashScreen(),
         loginTypePageRoute:(context)=> LoginTypePage(),
         loginPageRoute:(context)=> LoginPage(),
         registerPageRoute:(context) => RegistrationPage(),
         otpVerificationPageRoute:(context) => OtpVerification(),
         bottomNavbarPageRoute:(context) => BottomNavbar(),
+        forgotPasswordPageRoute:(context) => ForgotPasswordPage(),
       },
       title: appName,
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple),)

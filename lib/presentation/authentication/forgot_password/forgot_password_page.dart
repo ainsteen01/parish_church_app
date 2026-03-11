@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import '../../../utils/colors.dart';
 import '../../../utils/routes.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class ForgotPasswordPage extends StatefulWidget {
+  const ForgotPasswordPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<ForgotPasswordPage> createState() => _ForgotPasswordPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 30),
               const Text(
-                "Login to Test App",
+                "Forgot password",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
@@ -62,56 +62,34 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     fillColor: baseColorOne.withAlpha(50),
                     prefixIcon: Icon(
-                      Icons.supervised_user_circle,
+                      Icons.email,
                       color: Colors.white,
                     ),
                     label: const Text(
-                      "Enter user name",
+                      "Enter email",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
               ),
               SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: TextField(
-                  style: TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
-                    filled: true,
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white.withAlpha(50)),
-                    ),
-                    fillColor: baseColorOne.withAlpha(50),
-                    prefixIcon: Icon(Icons.password, color: Colors.white),
-                    label: const Text(
-                      "Enter password",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 20,),
+
               ElevatedButton(onPressed: (){
-                Navigator.pushNamed(context, otpVerificationPageRoute);
-              }, child: const Text("Login")),
-              SizedBox(height: 10,),
-              InkWell(
-                  onTap: (){
-                    Navigator.pushNamed(context, forgotPasswordPageRoute);
-                  },
-                  child: const Text("Forgot password ? ",style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700),)),
-              SizedBox(height: 10,),
-              RichText(text: TextSpan(children: [
-                const TextSpan(text: "Don't have an account ? "),
-                const TextSpan(text: "register", style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700)),
-              ])),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-                child: Divider(),
-              ),
-              ElevatedButton(onPressed: (){}, child: const Text("Login with OTP")),
-          
+                Navigator.pushNamed(context, loginPageRoute);
+              }, child: const Text("Request Reset")),
+              // SizedBox(height: 10,),
+              // const Text("Forgot password ? ",style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700),),
+              // SizedBox(height: 10,),
+              // RichText(text: TextSpan(children: [
+              //   const TextSpan(text: "Don't have an account ? "),
+              //   const TextSpan(text: "register", style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700)),
+              // ])),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+              //   child: Divider(),
+              // ),
+              // ElevatedButton(onPressed: (){}, child: const Text("Login with OTP")),
+
             ],
           ),
         ),

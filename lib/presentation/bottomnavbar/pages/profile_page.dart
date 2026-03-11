@@ -19,7 +19,7 @@ class _ProfilePageState extends State<ProfilePage> {
             alignment: Alignment.center,
             children: [
               AppBar(
-                title: Text('Profile', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 22),),
+                title: const Text('Profile', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 22),),
                 toolbarHeight: 130,
                 centerTitle: true,
                 automaticallyImplyLeading: false,

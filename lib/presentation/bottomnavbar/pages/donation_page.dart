@@ -14,7 +14,7 @@ class _DonationPageState extends State<DonationPage> {
     return Scaffold(
       backgroundColor: Colors.white,
      appBar: AppBar(
-       title: Text("Donation"),
+       title: const Text("Donation"),
        automaticallyImplyLeading: false,
        flexibleSpace: Container(
          width: double.infinity,
@@ -85,9 +85,9 @@ class _DonationPageState extends State<DonationPage> {
                          ),
                          child:Column(
                            children: [
-                             Text("Donation Type", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
+                             const Text("Donation Type", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
                              Icon(Icons.church, color: Colors.blueGrey,),
-                             Text("Donation 1")
+                             const Text("Donation 1")
                            ],
                          ),
                        ),
@@ -99,7 +99,7 @@ class _DonationPageState extends State<DonationPage> {
              ),
            ),
            SizedBox(height: 10,),
-           Text("Donation Amount", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
+           const Text("Donation Amount", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
            Padding(
              padding: const EdgeInsets.symmetric(horizontal: 20),
              child: TextField(
@@ -123,7 +123,7 @@ class _DonationPageState extends State<DonationPage> {
                    borderRadius: BorderRadius.circular(10),
                    color: baseColorOne.withAlpha(70)
                  ),
-                 child: Text("100", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
+                 child: const Text("100", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
                ),
                Container(
                  padding: EdgeInsets.all(10),
@@ -131,7 +131,7 @@ class _DonationPageState extends State<DonationPage> {
                    borderRadius: BorderRadius.circular(10),
                    color: baseColorOne.withAlpha(70)
                  ),
-                 child: Text("500", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
+                 child: const Text("500", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
                ),
                Container(
                  padding: EdgeInsets.all(10),
@@ -139,7 +139,7 @@ class _DonationPageState extends State<DonationPage> {
                    borderRadius: BorderRadius.circular(10),
                    color: baseColorOne.withAlpha(70)
                  ),
-                 child: Text("1000", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
+                 child: const Text("1000", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
                ),
                Container(
                  padding: EdgeInsets.all(10),
@@ -147,7 +147,7 @@ class _DonationPageState extends State<DonationPage> {
                    borderRadius: BorderRadius.circular(10),
                    color: baseColorOne.withAlpha(70)
                  ),
-                 child: Text("2000", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
+                 child: const Text("2000", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
                ),
              ],
            ),
@@ -164,7 +164,7 @@ class _DonationPageState extends State<DonationPage> {
                child: Column(
                  crossAxisAlignment: CrossAxisAlignment.start,
                  children: [
-                   Text(
+                   const Text(
                      "Payment Method", style: TextStyle(fontWeight: FontWeight.w700, color: Colors.black),),
                    SizedBox(
                      height: 100,
@@ -184,9 +184,9 @@ class _DonationPageState extends State<DonationPage> {
                              ),
                              child:Column(
                                children: [
-                                 Text("Payments", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
+                                 const Text("Payments", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),),
                                  Icon(Icons.payments_outlined, color: Colors.blueGrey,),
-                                 Text("Payment 1")
+                                 const Text("Payment 1")
                                ],
                              ),
                            ),
