@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/colors.dart';
+import '../../../utils/routes.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -91,7 +92,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               SizedBox(height: 20,),
-              ElevatedButton(onPressed: (){}, child: const Text("Login")),
+              ElevatedButton(onPressed: (){
+                Navigator.pushNamed(context, otpVerificationPageRoute);
+              }, child: const Text("Login")),
               SizedBox(height: 10,),
               const Text("Forgot password ? ",style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700),),
               SizedBox(height: 10,),

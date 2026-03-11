@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../utils/colors.dart';
+import '../../utils/routes.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -10,7 +11,17 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
+
 class _SplashScreenState extends State<SplashScreen> {
+  static const int delayTime = 5;
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(Duration(seconds: delayTime),(){
+      Navigator.pushNamed(context, loginTypePageRoute);
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

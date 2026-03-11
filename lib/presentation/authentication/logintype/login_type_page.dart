@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:parish_app/utils/colors.dart';
 
+import '../../../utils/routes.dart';
+
 class LoginTypePage extends StatefulWidget {
   const LoginTypePage({super.key});
 
@@ -35,6 +37,7 @@ class _LoginTypePageState extends State<LoginTypePage> {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(onPressed: (){
+                    Navigator.pushNamed(context, loginPageRoute);
                   },
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.green.shade400, foregroundColor: Colors.white,
                       
@@ -47,7 +50,9 @@ class _LoginTypePageState extends State<LoginTypePage> {
               child: SizedBox(
                 width: double.infinity,
                 height: 50,
-                child: ElevatedButton(onPressed: (){},
+                child: ElevatedButton(onPressed: (){
+                  Navigator.pushNamed(context, registerPageRoute);
+                },
                     style: ElevatedButton.styleFrom(backgroundColor: Colors.orange, foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
 

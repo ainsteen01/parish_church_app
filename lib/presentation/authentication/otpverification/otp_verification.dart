@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:parish_app/utils/colors.dart';
 
+import '../../../utils/routes.dart';
+
 class OtpVerification extends StatefulWidget {
   const OtpVerification({super.key});
 
@@ -62,7 +64,9 @@ class _OtpVerificationState extends State<OtpVerification> {
             }, // end onSubmit
           ),
           SizedBox(height: 20,),
-          ElevatedButton(onPressed: (){}, child: const Text("Verify OTP"))
+          ElevatedButton(onPressed: (){
+            Navigator.pushNamed(context, bottomNavbarPageRoute);
+          }, child: const Text("Verify OTP"))
         ],),
       ),
     );
