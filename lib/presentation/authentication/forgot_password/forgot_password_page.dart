@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../utils/colors.dart';
 import '../../../utils/routes.dart';
 
@@ -73,23 +72,9 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                 ),
               ),
               SizedBox(height: 20),
-
               ElevatedButton(onPressed: (){
                 Navigator.pushNamed(context, loginPageRoute);
               }, child: const Text("Request Reset")),
-              // SizedBox(height: 10,),
-              // const Text("Forgot password ? ",style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700),),
-              // SizedBox(height: 10,),
-              // RichText(text: TextSpan(children: [
-              //   const TextSpan(text: "Don't have an account ? "),
-              //   const TextSpan(text: "register", style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700)),
-              // ])),
-              // Padding(
-              //   padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-              //   child: Divider(),
-              // ),
-              // ElevatedButton(onPressed: (){}, child: const Text("Login with OTP")),
-
             ],
           ),
         ),

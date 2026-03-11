@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../utils/colors.dart';
 import '../../../utils/routes.dart';
 
@@ -91,27 +90,52 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
-              ElevatedButton(onPressed: (){
-                Navigator.pushNamed(context, otpVerificationPageRoute);
-              }, child: const Text("Login")),
-              SizedBox(height: 10,),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, otpVerificationPageRoute);
+                },
+                child: const Text("Login"),
+              ),
+              SizedBox(height: 10),
               InkWell(
-                  onTap: (){
-                    Navigator.pushNamed(context, forgotPasswordPageRoute);
-                  },
-                  child: const Text("Forgot password ? ",style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700),)),
-              SizedBox(height: 10,),
-              RichText(text: TextSpan(children: [
-                const TextSpan(text: "Don't have an account ? "),
-                const TextSpan(text: "register", style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w700)),
-              ])),
+                onTap: () {
+                  Navigator.pushNamed(context, forgotPasswordPageRoute);
+                },
+                child: const Text(
+                  "Forgot password ? ",
+                  style: TextStyle(
+                    color: Colors.yellow,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              SizedBox(height: 10),
+              RichText(
+                text: TextSpan(
+                  children: [
+                    const TextSpan(text: "Don't have an account ? "),
+                    const TextSpan(
+                      text: "register",
+                      style: TextStyle(
+                        color: Colors.yellow,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 10,
+                ),
                 child: Divider(),
               ),
-              ElevatedButton(onPressed: (){}, child: const Text("Login with OTP")),
-          
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text("Login with OTP"),
+              ),
             ],
           ),
         ),

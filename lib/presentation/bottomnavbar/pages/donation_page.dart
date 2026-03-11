@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:parish_app/utils/colors.dart';
 
+import '../../../utils/util.dart';
+
 class DonationPage extends StatefulWidget {
   const DonationPage({super.key});
 
@@ -13,21 +15,7 @@ class _DonationPageState extends State<DonationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-     appBar: AppBar(
-       title: const Text("Donation"),
-       automaticallyImplyLeading: false,
-       flexibleSpace: Container(
-         width: double.infinity,
-         decoration:
-         BoxDecoration(
-           gradient: LinearGradient(
-               begin: Alignment.topCenter,
-               end: Alignment.bottomCenter,
-               colors: [
-             Colors.orangeAccent.shade100, Colors.orange.shade50
-           ])
-         ),),
-     ),
+     appBar: homeAppBar("Donation"),
      body:  Container(
        decoration: BoxDecoration(
          gradient: LinearGradient(
@@ -207,4 +195,6 @@ class _DonationPageState extends State<DonationPage> {
      ),
     );
   }
+
+
 }
