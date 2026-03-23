@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../utils/colors.dart';
+import '../../../../utils/colors.dart';
 
 class CatechismAttendancePage extends StatefulWidget {
   const CatechismAttendancePage({super.key});
@@ -52,9 +52,11 @@ class _CatechismAttendancePageState extends State<CatechismAttendancePage> {
       elevation: 0,
       backgroundColor: baseColorOne,
       flexibleSpace: FlexibleSpaceBar(
+        titlePadding: EdgeInsets.symmetric(vertical: 30),
         title: const Text(
           "Attendance & Marks",
           style: TextStyle(
+            color: Colors.white,
             fontWeight: FontWeight.w600,
             fontSize: 16,
           ),
@@ -77,7 +79,7 @@ class _CatechismAttendancePageState extends State<CatechismAttendancePage> {
               size: Size.infinite,
             ),
             Positioned(
-              bottom: 30,
+              bottom: 70,
               left: 20,
               child: Row(
                 children: [

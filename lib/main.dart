@@ -5,15 +5,15 @@ import 'package:parish_app/presentation/authentication/logintype/login_type_page
 import 'package:parish_app/presentation/authentication/otpverification/otp_verification.dart';
 import 'package:parish_app/presentation/authentication/registration/registration_page.dart';
 import 'package:parish_app/presentation/bottomnavbar/bottom_navbar.dart';
-import 'package:parish_app/presentation/bottomnavbar/pages/catechism_attendance_page.dart';
-import 'package:parish_app/presentation/bottomnavbar/pages/catechism_page.dart';
+import 'package:parish_app/presentation/bottomnavbar/pages/catechism/catechism_attendance_page.dart';
+import 'package:parish_app/presentation/bottomnavbar/pages/catechism/catechism_page.dart';
 import 'package:parish_app/presentation/bottomnavbar/pages/certificates_page.dart';
-import 'package:parish_app/presentation/bottomnavbar/pages/donation_history.dart';
+import 'package:parish_app/presentation/bottomnavbar/pages/donation/donation_history.dart';
 import 'package:parish_app/presentation/bottomnavbar/pages/family_detail_page.dart';
 import 'package:parish_app/presentation/bottomnavbar/pages/parish_info_page.dart';
 import 'package:parish_app/presentation/bottomnavbar/pages/profile_page.dart';
-import 'package:parish_app/presentation/bottomnavbar/pages/sacrament_page.dart';
-import 'package:parish_app/presentation/bottomnavbar/pages/sacraments_details.dart';
+import 'package:parish_app/presentation/bottomnavbar/pages/sacraments/sacrament_page.dart';
+import 'package:parish_app/presentation/bottomnavbar/pages/sacraments/sacraments_details.dart';
 import 'package:parish_app/presentation/splashscreen/splash_screen.dart';
 import 'package:parish_app/utils/constants.dart';
 import 'package:parish_app/utils/routes.dart';
@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: initialRoutes,
       routes:{
         initialRoutes:(context) => SplashScreen(),

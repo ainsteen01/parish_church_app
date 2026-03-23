@@ -255,7 +255,8 @@ class ParishInfoPage extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(28),
         gradient: const LinearGradient(
-          colors: [Color(0xFF1A1B4B), Color(0xFF2D2F6B)],
+         // colors: [Color(0xFF1A1B4B), Color(0xFF2D2F6B)],
+          colors: [baseColorTwo, baseColorOne],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -514,9 +515,11 @@ class ParishInfoPage extends StatelessWidget {
       elevation: 0,
       backgroundColor: baseColorOne,
       flexibleSpace: FlexibleSpaceBar(
+        titlePadding: EdgeInsets.all(30),
         title: const Text(
           "Parish Information",
           style: TextStyle(
+            color: Colors.white,
             fontWeight: FontWeight.w600,
             fontSize: 16,
           ),

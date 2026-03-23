@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:parish_app/utils/colors.dart';
 
 AppBar homeAppBar(String title) {
   return AppBar(

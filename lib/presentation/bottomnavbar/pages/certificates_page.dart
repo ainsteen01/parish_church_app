@@ -365,7 +365,7 @@ class _CertificatesPageState extends State<CertificatesPage> {
         icon: Icons.local_fire_department,
         color: const Color(0xFFFFA726),
         gradient: const [Color(0xFFFFA726), Color(0xFFFFB74D)],
-        imageUrl: 'https://images.unsplash.com/photo-1449505272090-ca8e55e3755e',
+        imageUrl: 'https://images.unsplash.com/photo-1507692049790-de58290a4334',
         downloads: 2,
       ),
       _CertificateItem(
@@ -392,7 +392,7 @@ class _CertificatesPageState extends State<CertificatesPage> {
         icon: Icons.card_membership,
         color: Colors.purple,
         gradient: const [Color(0xFF9C27B0), Color(0xFFBA68C8)],
-        imageUrl: 'https://images.unsplash.com/photo-1583793237493-70d5e2a7579a',
+        imageUrl: 'https://images.unsplash.com/photo-1519681393784-d120267933ba',
         downloads: 7,
       ),
       _CertificateItem(
@@ -405,7 +405,7 @@ class _CertificatesPageState extends State<CertificatesPage> {
         icon: Icons.auto_stories,
         color: const Color(0xFFC850C0),
         gradient: const [Color(0xFFC850C0), Color(0xFFE1B0E1)],
-        imageUrl: 'https://images.unsplash.com/photo-1477065193986-f1cf36512db1',
+        imageUrl: 'https://images.unsplash.com/photo-1519681393784-d120267933ba',
         downloads: 4,
       ),
     ];

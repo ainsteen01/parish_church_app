@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../../utils/colors.dart';
+import '../../../../utils/colors.dart';
 
 class SacramentDetailsPage extends StatelessWidget {
   const SacramentDetailsPage({super.key});
@@ -48,9 +48,11 @@ class SacramentDetailsPage extends StatelessWidget {
       elevation: 0,
       backgroundColor: baseColorOne,
       flexibleSpace: FlexibleSpaceBar(
+        titlePadding: EdgeInsets.all(30),
         title: const Text(
           "Sacrament Details",
           style: TextStyle(
+            color: Colors.white,
             fontWeight: FontWeight.w600,
             fontSize: 16,
           ),
@@ -870,15 +872,15 @@ class SacramentDetailsPage extends StatelessWidget {
                 'Baptism',
               ),
               _buildPhotoItem(
-                'https://images.unsplash.com/photo-1477065193986-f1cf36512db1?ixlib=rb-4.0.3',
+                'https://images.unsplash.com/photo-1519741497674-611481863552',
                 'Ceremony',
               ),
               _buildPhotoItem(
-                'https://images.unsplash.com/photo-1449505272090-ca8e55e3755e?ixlib=rb-4.0.3',
+                'https://images.unsplash.com/photo-1511895426328-dc8714191300',
                 'Family',
               ),
               _buildPhotoItem(
-                'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3',
+                'https://images.unsplash.com/photo-1513151233558-d860c5398176',
                 'Celebration',
               ),
             ],

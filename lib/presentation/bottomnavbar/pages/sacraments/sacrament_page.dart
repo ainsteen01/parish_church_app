@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../../utils/colors.dart';
-import '../../../utils/routes.dart';
+import '../../../../utils/colors.dart';
+import '../../../../utils/routes.dart';
 
 class SacramentsPage extends StatefulWidget {
   const SacramentsPage({super.key});

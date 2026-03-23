@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../../utils/colors.dart';
-import '../../../utils/routes.dart';
+import '../../../../utils/colors.dart';
+import '../../../../utils/routes.dart';
 
 class CatechismPage extends StatefulWidget {
   const CatechismPage({super.key});
@@ -920,8 +920,9 @@ class _CatechismPageState extends State<CatechismPage> {
                   ],
                 ),
                 const SizedBox(height: 4),
-                SizedBox(
-                  child: Expanded(
+                // Expanded(
+                //   child:
+                  SizedBox(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -941,7 +942,7 @@ class _CatechismPageState extends State<CatechismPage> {
                       ],
                     ),
                   ),
-                ),
+               // ),
                 const SizedBox(height: 4),
                 Row(
                   children: [

@@ -47,9 +47,11 @@ class FamilyDetailsPage extends StatelessWidget {
       elevation: 0,
       backgroundColor: baseColorOne,
       flexibleSpace: FlexibleSpaceBar(
+        titlePadding: EdgeInsets.all(30),
         title: const Text(
           "Family Details",
           style: TextStyle(
+            color: Colors.white,
             fontWeight: FontWeight.w600,
             fontSize: 16,
           ),
